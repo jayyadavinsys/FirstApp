@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Main2Activity::class.java)
             startActivity(intent)
         }
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+
         Log.d("MainActivity", "OnCreate Method call successfully")
     }
 
