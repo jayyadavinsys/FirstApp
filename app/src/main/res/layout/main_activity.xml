@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
-        android:contentDescription="Image"
+        android:contentDescription="@string/Image"
         android:src="@drawable/google_logo" />
 
     <TextView
@@ -18,11 +18,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/img.1"
-        android:text="Sign In"
+        android:text="@string/sin"
         android:textColor="#020202"
-
         android:textSize="20sp" />
-
 
     <TextView
         android:id="@+id/text.2"
@@ -30,15 +28,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/text.1"
         android:layout_marginTop="20dp"
-        android:text="with your Google Account. This account will be available to other Google apps in the browser."
-        android:textColor="#000000" />
+        android:text="@string/youracc"
+        android:textColor="#ffff" />
 
     <TextView
         android:id="@+id/text.3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text.2"
-        android:text="Learn more about using your account"
+        android:text="@string/about"
         android:textColor="#762E2E"
         android:textSize="15sp" />
 
@@ -47,30 +45,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/text.3"
+        android:inputType="textWebEmailAddress"
         android:layout_marginTop="75dp"
+        android:autofillHints="emailAddress"
         android:shadowColor="#141414" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_below="@id/edit.1"
-        android:text="Forget email?"
+        android:text="@string/forget"
         android:textColor="#AD4D4D" />
 
     <Button
         android:id="@+id/btn.1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:backgroundTint="#4D1D1D"
-        android:text="Next" />
+        android:text="@string/next" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/btn.1"
-        android:text="Create Account"
+        android:text="@string/create"
         android:textColor="#8E4E4E" />
 
 </RelativeLayout>
